@@ -1,0 +1,227 @@
+/* Arrière-plan flouté */
+body {
+    background-size: cover;
+    background-position: center;
+    filter: blur(0px); /* Effet de flou sur l'image d'arrière-plan */
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Conteneur global pour annuler le flou sur le contenu */
+.main-container {
+    position: relative;
+    z-index: 2; /* Superposer le contenu par-dessus l'arrière-plan flouté */
+    backdrop-filter: blur(0px); /* Annuler le flou du corps */
+}
+
+
+/* Styles communs pour tous les boutons */
+.btn {
+    width: 200px; /* Réduit la largeur des boutons */
+    height: 120px; /* Réduire la hauteur des boutons */
+    background-color: rgb(255, 255, 255); /* Blanc pour tous les boutons par défaut */
+    color: #003366; /* Bleu sombre pour le texte */
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.331);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* Icônes des boutons */
+.btn i {
+    font-size: 50px; /* Réduire la taille des icônes */
+    color: #003366; /* Bleu sombre pour les icônes */
+    margin-bottom: 5px;
+}
+.btn i:hover{
+    font-size: 52px;
+    color:#ffffff;
+}
+
+/* Texte des boutons */
+.btn span {
+    font-weight: bold;
+    font-size: 14px; /* Réduire la taille du texte */
+}
+
+/* Effets de survol pour chaque bouton */
+.btn-vehicules:hover {
+    background-color: #08488d; /* Bleu foncé */
+    color: white;
+}
+
+.btn-personnel:hover {
+    background-color: #a67e05; /* Jaune foncé */
+    color: white;
+}
+
+.btn-operations:hover{
+    background-color: #067383; /* Bleu plus foncé */
+    color: white;
+}
+
+.btn-missions:hover {
+    background-color: #900916; /* Rouge foncé */
+    color: white;
+}
+
+.btn-chauffeurs:hover {
+    background-color: #07721e; /* Vert foncé */
+    color: white;
+}
+
+.btn-responsables:hover {
+    background-color: #41097c; /* Violet foncé */
+    color: white;
+}
+
+.btn-alertes:hover {
+    background-color: #863608; /* Orange foncé */
+    color: white;
+}
+
+.btn-statistiques:hover {
+    background-color: #515252; /* Gris foncé */
+    color: white;
+}
+
+ /* Styles pour la navbar */
+ .navbar {
+    background: linear-gradient(to right, #211f20, #003366);
+    padding: 1px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 0px; /* Espace sous la navbar */
+    display: flex;
+    justify-content: space-between; /* Espace entre les éléments de gauche et de droite */
+    align-items: center; /* Centrer les éléments verticalement */
+    border-radius: 0px; /* Coins arrondis */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; /* Centrer le logo et le texte verticalement */
+    color: #ffffff;
+}
+
+.logo {
+    width: 74px; /* Ajuster la taille du logo */
+    height: 50px;
+    margin-right: 10px; /* Espace entre le logo et le texte */
+}
+
+.deconnexion-container {
+    margin-left: auto; /* Pousse le bouton de déconnexion à droite */
+}
+
+.deconnexion {
+    font-size: 14px;
+}
+
+.deconnexion:hover {
+    font-size: 15px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Centrer les éléments verticalement */
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-align: center;
+    padding: 0px 0px;
+    text-decoration: none;
+    display: block;
+}
+
+.user-info {
+    color: #ffffff;
+    margin-left: 800px; /* Ajustez si nécessaire */
+    display: flex; /* Flexbox pour aligner l'icône et le texte */
+    align-items: center; /* Centrer verticalement */
+}
+
+.user-circle {
+    width: 30px; /* Ajuster la taille du cercle */
+    height: 30px; /* Ajuster la taille du cercle */
+    border-radius: 50%; /* Rendre le cercle arrondi */
+    background-color: #007bff; /* Couleur de fond du cercle */
+    color: white; /* Couleur du texte */
+    display: flex; /* Pour centrer le texte */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    font-weight: bold; /* Mettre le texte en gras */
+    margin-right: 5px; /* Espace entre le cercle et le nom */
+    font-size: 16px; /* Ajuster la taille de la lettre */
+}
+
+.user-info i {
+    margin-left: 10px;
+}
+.form-group-1{
+    display: flex;
+    gap: 4px; /* Espacement entre les éléments */
+    margin-bottom: 2px; /* Espacement entre les groupes */
+}
+.user-name{
+    margin-top:4px;
+}
+/* Style pour le conteneur du formulaire */
+.form-container {
+    width: 100%;
+    max-width: 900px; /* Largeur maximale du formulaire */
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #e8e8e8; /* Fond blanc pour un look propre */
+    border-radius: 6px; /* Coins arrondis plus marqués */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);/* Ombre plus prononcée pour un effet de profondeur */
+}
+
+/* Style pour les éléments de formulaire */
+form {
+    display: flex;
+    flex-direction: column; /* Alignement vertical des éléments */
+}
+
+/* Style pour les champs de texte et les sélecteurs */
+input[type="text"], select, input[type="date"], input[type="email"], input[type="password"] {
+    width: 100%; /* Largeur par défaut */
+    padding: 8px;
+    margin-bottom: 1px; /* Espacement entre les champs */
+    border: 1px solid #ddd; /* Bordure légère */
+    border-radius: 6px; /* Coins arrondis */
+    box-sizing: border-box; /* Inclut padding et bordure dans la largeur */
+}
+
+/* Style pour organiser les groupes de deux éléments sur la même ligne */
+.form-group {
+    display: flex;
+    gap: 20px; /* Espacement entre les éléments */
+    margin-bottom: 20px; /* Espacement entre les groupes */
+}
+
+/* Style pour le bouton de validation */
+.btn-valider {
+    background-color: #062c55; /* Bleu principal */
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-valider:hover {
+    background-color: #004494; /* Bleu foncé au survol */
+}
+

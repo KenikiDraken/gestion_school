@@ -1,0 +1,251 @@
+.navbar {
+background: linear-gradient(to right, #211f20, #003366);
+padding: 1px;
+font-family: Arial, sans-serif;
+margin-bottom: 0px; /* Espace sous la navbar */
+display: flex;
+justify-content: space-between; /* Espace entre les éléments de gauche et de droite */
+align-items: center; /* Centrer les éléments verticalement */
+border-radius: 0px; /* Coins arrondis */
+}
+
+.logo-container {
+display: flex;
+align-items: center; /* Centrer le logo et le texte verticalement */
+color: #ffffff;
+}
+
+.logo {
+width: 74px; /* Ajuster la taille du logo */
+height: 50px;
+margin-right: 10px; /* Espace entre le logo et le texte */
+}
+
+.deconnexion-container {
+margin-left: auto; /* Pousse le bouton de déconnexion à droite */
+}
+
+.deconnexion {
+font-size: 14px;
+}
+
+.deconnexion:hover {
+font-size: 15px;
+}
+
+.navbar ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+display: flex;
+align-items: center; /* Centrer les éléments verticalement */
+}
+
+.navbar ul li {
+margin: 0 15px;
+}
+
+.navbar ul li a {
+text-align: center;
+padding: 0px 0px;
+text-decoration: none;
+display: block;
+}
+.user-info {
+color: #ffffff;
+margin-left: 800px; /* Ajustez si nécessaire */
+}
+
+.user-info i {
+margin-left: 10px;
+}
+.container-1 {
+background-color: #dedcdc;
+padding: 20px;
+border-image-slice: 1;
+}
+.container-R-1 {
+background-color: #dedcdc;
+padding: 20px;
+width: 510px;
+height:200px;
+border-radius: 5px;
+border-image-slice: 1;
+}
+
+.container-R-2 {
+background-color: #dedcdc; /* Gris plus foncé pour le cadre */
+width: 700px;
+height:200px;
+padding: 20px; /* Augmente l'espace intérieur pour le cadre */
+border-radius: 5px;
+border-image-slice: 1; /* Appliquer le dégradé sur toute la bordure */
+}
+/* Style pour organiser les groupes de deux éléments sur la même ligne */
+.form-group {
+display: flex;
+gap: 20px; /* Espacement entre les éléments */
+margin-bottom: 20px; /* Espacement entre les groupes */
+}
+/* Ajuster le bouton de retour pour le rendre moins large */
+.go-home-btn {
+background-color:#003366; /* Fond orange par défaut */
+width: 50px;
+height:35px;
+border: none; /* Pas de bordure */
+padding: 5px 10px; /* Réduit le padding pour rendre le bouton plus compact */
+border-radius: 5px; /* Coins arrondis */
+cursor: pointer; /* Curseur de pointeur */
+display: inline-flex; /* Alignement de l'icône */
+align-items: center;
+justify-content: center;
+transition: all 0.3s ease; /* Transition fluide pour les couleurs */
+}
+.go-home-btn i {
+color: #ffff; /* Flèche bleue */
+font-size: 20px; /* Taille de l'icône */
+}
+.go-home-btn:hover {
+background-color: #337ab7; /* Fond bleu au survol */
+}
+.go-home-btn:hover i {
+color: #ffffff; /* Flèche orange au survol */
+}
+/* Style du texte de gestion des véhicules */
+.gest_veh {
+font-size: 36px;
+margin: -9px 0px 0px 0px;
+font-weight: bold;
+color: #003366;
+left: 20%; /* Décale le texte vers le centre */
+}
+.gest_veh-1{
+   font-size: 30px;
+   margin: -9px 0px 0px 0px;
+   font-weight: bold;
+   color: #003366;
+   left: 20%; /* Décale le texte vers le centre */
+   }
+/* Styles pour le bouton "Nouveau administrateur" */
+.btn-responsables {
+width: 180px; /* Largeur spécifique pour ce bouton */
+height: 100px; /* Hauteur spécifique pour ce bouton */
+background-color: rgb(255, 255, 255); /* Couleur de fond blanche */
+color: #003366; /* Bleu sombre pour le texte */
+border-radius: 8px; /* Coins arrondis */
+display: flex;
+margin-left: 18px;
+margin-top:18px;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.331); /* Ombre portée */
+transition: background-color 0.3s ease, color 0.3s ease; /* Transition pour l'effet hover */
+}
+.btn-respon-1 {
+width: 180px; /* Largeur spécifique pour ce bouton */
+height: 100px; /* Hauteur spécifique pour ce bouton */
+background-color: rgb(255, 255, 255); /* Couleur de fond blanche */
+color: #003366; /* Bleu sombre pour le texte */
+border-radius: 8px; /* Coins arrondis */
+display: flex;
+margin-left: 18px;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.331); /* Ombre portée */
+transition: background-color 0.3s ease, color 0.3s ease; /* Transition pour l'effet hover */
+}
+.btn-respon {
+width: 180px; /* Largeur spécifique pour ce bouton */
+height: 100px; /* Hauteur spécifique pour ce bouton */
+background-color: #003366;
+color: #ffff; /* Bleu sombre pour le texte */
+border-radius: 8px; /* Coins arrondis */
+display: flex;
+margin-left: 80px;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.331); /* Ombre portée */
+}
+
+/* Icônes du bouton "Nouveau administrateur" */
+.btn-responsables i {
+margin-top:8px;
+font-size: 44px; /* Taille de l'icône */
+color: #003366; /* Bleu sombre pour l'icône */
+margin-bottom: 5px;
+}
+.btn-respon-1 i {
+margin-top:8px;
+font-size: 44px; /* Taille de l'icône */
+color: #003366; /* Bleu sombre pour l'icône */
+margin-bottom: 5px;
+}
+.btn-respon i {
+margin-top:8px;
+font-size: 44px; /* Taille de l'icône */
+color: #ffff 7%; /* pour l'icône */
+margin-bottom: 5px;
+}
+
+/* Effet hover pour tout le bouton (icône + texte) */
+.btn-responsables:hover {
+background-color: #003366; /* Violet foncé */
+color: white; /* Texte et icône blancs */
+}
+/* Effet hover pour tout le bouton (icône + texte) */
+.btn-respon-1:hover {
+background-color: #003366; /* Violet foncé */
+color: white; /* Texte et icône blancs */
+}
+
+.btn-responsables:hover i, 
+.btn-responsables:hover span {
+color: white; /* Couleur blanche appliquée à la fois à l'icône et au texte */
+}
+.btn-respon-1:hover i, 
+.btn-respon-1:hover span {
+color: white; /* Couleur blanche appliquée à la fois à l'icône et au texte */
+}
+
+/* Texte du bouton "Nouveau administrateur" */
+.btn-responsables span {
+font-weight: bold;
+font-size: 14px; /* Taille du texte */
+}
+/* Texte du bouton "Nouveau administrateur" */
+.btn-respon-1 span {
+font-weight: bold;
+font-size: 14px; /* Taille du texte */
+}
+.btn-respon span {
+margin-top:-10px;
+color:#ffff;
+font-weight: bold;
+font-size: 14px; /* Taille du texte */
+}
+.ligne-separation {
+height: 2px; /* Hauteur de la ligne */
+background-color: #337ab7; /* Couleur bleu sombre */
+margin-bottom: 0px; /* Espacement entre la ligne et le conteneur */
+}
+.my-custom-group {
+margin-top: -15px;
+padding: 0 120px; /* Ajoute un padding pour espacer les bouton*/
+display: flex;
+justify-content: space-between; /* Espace entre les boutons à gauche et à droite */
+align-items: flex-start; /* Aligne les éléments en haut */
+}
+
+.button-container {
+display: flex;
+justify-content: flex-start; /* Centre le bouton d'ajout à gauche */
+gap: 20px; /* Espace entre les boutons */
+}
+
+.right-buttons {
+justify-content: flex-end; /* Aligne les boutons à droite */
+gap: 30px; /* Espace entre les boutons à droite */
+}
